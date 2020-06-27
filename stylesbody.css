@@ -1,0 +1,131 @@
+.card-body {
+    background-color:black;
+    color: whitesmoke;
+}
+
+.pic {
+    width: 100%;
+    height: 330px;
+}
+
+.card {
+    background-color:black;
+    color: whitesmoke;
+    border: 2px solid white;
+    padding-top: 20px;
+   
+}
+
+
+ body {
+        background-image: url(https://images.unsplash.com/photo-1496098236379-e7c6cfb4a70d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    };
+
+.card-title {
+    font-size: 500;
+    font-weight: bold;
+    padding-top: 7px;
+}
+
+.card-image-top {
+    max-height: 100rem;
+}
+
+.logo {
+    background-image: url(hriday.jpeg);
+}
+
+.flip-box {
+    background-color: transparent;
+    width: 350px;
+    max-width: 120%;
+    height: 200px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: absolute;
+    width: 92%;
+    
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  .flip-box-back {
+    transform: rotateY(180deg);
+  }
+
+  h3 {
+      text-align: center;
+      color: gold;
+  }
+
+
+  /** EXTRAS*/
+
+  .container #home-tiles {
+      position: relative;
+  }
+
+  #news {
+    background: url('https://images.unsplash.com/photo-1529068755536-a5ade0dcb4e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=801&q=80') no-repeat;
+    background-position: center;
+    opacity: 0.8;
+    width:auto;
+    height:250px;
+    
+  }
+
+  #info {
+    background: url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80') no-repeat;
+    background-position: center;
+    width: auto;
+    height:250px;
+  }
+  
+  #stages {
+    background: url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80') no-repeat;
+    background-position: center;
+    width: auto;
+    height:250px;
+    clear: left;
+  }
+  
+  #faq {
+    background: url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80') no-repeat;
+    background-position: center;
+    width: auto;
+    height:250px;
+  }
+  
+  
+
+  #news, #info {
+    width: auto;
+    margin: 0 auto 15px;
+
+  }
+
+  .cen {
+    font-size: 70px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
