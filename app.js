@@ -14,10 +14,13 @@ require("dotenv/config");
 //////////////
 
 mongoose
-  .connect("mongodb://localhost/hriday", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(
+    "mongodb+srv://hriday:hriday123@cluster0-tjunm.mongodb.net/hriday?retryWrites=true&w=majority",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
   .then(() => console.log("Connected to db!"));
 
 const Registration = mongoose.model("details", {
