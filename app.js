@@ -217,6 +217,6 @@ function isLoggedIn(req, res, next) {
 const port = process.env.PORT || 3000;
 const host = process.env.HOST || "localhost";
 
-app.listen(port, host, function () {
+app.listen(port, process.env.IP, function () {
   console.log("Server is listening!");
 });
